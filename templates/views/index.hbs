@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Express WEBPAGE</title>
+</head>
+<body>
+
+    {{>navbar}}
+
+   
+     {{!-- Hero Section Starts --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    {{!-- left side --}}
+                    <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        <h1 class="hero-text">HI THERE</h1>
+                        <h1>WELCOME TO MY WEBPAGE</h1>
+                        <p>I'm Fakhar Hanif <span class="bold-style">Full Stack Developer</span> <br>
+                        Scroll Down to Get More Info </p>
+                        {{!-- <button class="btn-style btn-primary">Read More</button> --}}
+                    </div>
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src='images/growth.svg' alt="backend">
+                            
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Hero Section Ends --}}
+
+    {{!-- About Us Section Starts --}}
+    {{>about}}
+    {{!-- About Us section ends --}}
+
+    {{!-- skillss Section Starts --}}
+    {{>skills}}
+    {{!-- skillss section ends --}}
+
+    {{!-- Maps Section Starts --}}
+    {{>maps}}
+    {{!-- Maps section ends --}}
+
+    {{!-- Contact Us Section Starts --}}
+    {{>contact}}
+    {{!-- Contact Us section ends --}}
+
+     <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
